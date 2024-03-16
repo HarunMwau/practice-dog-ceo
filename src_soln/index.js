@@ -17,7 +17,7 @@ fetch("https://dog.ceo/api/breeds/image/random/4")
 fetch('https://dog.ceo/api/breeds/list/all')
     .then(res => res.json())
     .then(data => {             // can be substituted for a function that takes in data.message e.g. getBreed(data.message), then wrap everything else into the function
-        console.log(data.message)
+        // console.log(data.message)
         const select = document.querySelector('#breed-dropdown') 
         const option = document.createElement('option')
         select.insertBefore(option, select.firstChild)      // Empty option reverts to the full list after any filter when clicking through a-d
